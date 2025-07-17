@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+    .navigate {
+      background: #ffcc00;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 50px;
+      margin: 25px 16px;
+      padding: 25px;
+      animation: navigate 0.4s ease-in forwards;
+      opacity: 0;
+    }
+    @keyframes navigate {
+      from {
+        opacity: 0;
+        transform: translate(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translate(0);
+      }
+    }
+    .logo h1 {
+      font-size: 26px;
+      font-weight: bold;
+      color: black;
+      animation: logo 0.8s ease-in forwards;
+      opacity: 0;
+    }
+    @keyframes logo {
+      from {
+        opacity: 0;
+        transform: translate(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translate(0);
+      }
+    }
+    .home {
+      display: flex;
+      font-size: 22px;
+      gap: 30px;
+      font-weight: bold;
+      padding-right: 70px;
+      animation: home 1.2s ease-in forwards;
+      opacity: 0;
+    }
+    @keyframes home {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translate(0);
+      }
+    }
+    .home a {
+      text-decoration: none;
+      color: black;
+    }
+    .home a:hover {
+      color: #333;
+    }
+    main {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin: 20px;
+    }
+    .img a {
+      padding: 1px 90px;
+      animation: img 3.5s ease-in forwards;
+      opacity: 0;
+    }
+    @keyframes img {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translate(0);
+      }
+    }
+    .text {
+      align-self: center;
+      font-size: 25px;
+      animation: text 2.0s ease-in forwards;
+      opacity: 0;
+    }
+    @keyframes text {
+      from {
+        opacity: 0;
+        transform: translate(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translate(0);
+      }
+    }
+    .text h4 {
+      color: #ffcc00;
+      margin-bottom: 10px;
+      animation: texth4 2.4s ease-in forwards;
+      opacity: 0;
+    }
+    @keyframes texth4 {
+      from {
+        opacity: 0;
+        transform: translate(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translate(0);
+      }
+    }
+    .text h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      line-height: 1.3;
+      animation: texth1 2.8s ease-in forwards;
+      opacity: 0;
+    }
+    .text h1 span {
+      color: #ffcc00;
+      animation: textsp 3.2s ease-in forwards;
+      opacity: 0;
+    }
+    @keyframes texth1, textsp {
+      from {
+        opacity: 0;
+        transform: translate(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translate(0);
+      }
+    }
+    .text p {
+      color: black;
+      margin-bottom: 30px;
+      font-size: 16px;
+      animation: textp 3.6s ease-in forwards;
+      opacity: 0;
+    }
+    @keyframes textp {
+      from {
+        opacity: 0;
+        transform: translate(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translate(0);
+      }
+    }
+    .social-icons a {
+      font-size: 29px;
+      margin-right: 10px;
+    }
+    .second {
+      background-color: #ffcc00;
+      padding: 30px 70px;
+      margin: 25px 16px;
+      border-radius: 50px;
+    }
+    .third {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 30px 70px;
+      gap: 40px;
+    }
+    .third img {
+      height: 220px;
+      width: 230px;
+      border-radius: 50%;
+      border: 5px solid #ffcc00;
+    }
+    .third .text h2 {
+      font-size: 40px;
+    }
+    .para p {
+      font-size: 22px;
+      padding-top: 12px;
+    }
+    .logo-icons a {
+      font-size: 26px;
+      margin-right: 15px;
+    }
+    .but {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+    }
+    .but a {
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 18px;
+      text-decoration: none;
+      background-color: #ffcc00;
+      border: 3px solid #ff4d4d;
+      color: black;
+    }
+    .but a:hover {
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navigate">
+    <div class="logo">
+      <h1>Portfolio</h1>
+    </div>
+    <nav class="home">
+      <a href="#">Home</a>
+      <a href="#about">About us</a>
+      <a href="#">Contact</a>
+      <a href="#about">Resume</a>
+    </nav>
+  </header>
+
+  <!-- Main Hero Section -->
+  <main>
+    <div class="img">
+      <a href="#"><img src="o1.jpg" style="height: 589px; width: 420px;" alt="Om Image"></a>
+    </div>
+    <div class="text">
+      <h4>Hello !</h4>
+      <h1>I'm Om Patil<br><span>WordPress Developer</span></h1>
+      <p>
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook" style="color:blue;"></i></a>
+        <a href="https://www.instagram.com/its_ommiiiii_?igsh=MWhsejV0Ymk2N3Nz" style="color:rgb(210,13,53);"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/qr/ACHRSZHNXHVAL1"><i class="fa-brands fa-whatsapp" style="color:#42f557;"></i></a>
+        <a href="#"><i class="fa-brands fa-telegram" style="color:rgb(98,181,238);"></i></a>
+        <a href="#"><i class="fa-brands fa-github" style="color:#9bacc7;"></i></a>
+      </div>
+    </div>
+  </main>
+
+  <!-- About Section with ID for Scrolling -->
+  <section id="about" class="second">
+    <h1>About us</h1>
+  </section>
+
+  <!-- Details Section -->
+  <section class="third">
+    <div class="img">
+      <a href="#"><img src="o1.jpg" alt="About Image"></a>
+    </div>
+    <div class="text">
+      <h2>About me</h2>
+      <div class="para">
+        <p>
+          I help agencies & brands to turn their ideas into designs. <br>
+          My heart is creativity and design and my head has always <br>
+          been business led. Which to this day has served me very well!
+        </p>
+        <div class="logo-icons">
+          <a href="#"><i class="fa-brands fa-facebook" style="color:blue;"></i></a>
+          <a href="https://www.instagram.com/its_ommiiiii_?igsh=MWhsejV0Ymk2N3Nz" style="color:rgb(210,13,53);"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/qr/ACHRSZHNXHVAL1"><i class="fa-brands fa-whatsapp" style="color:#42f557;"></i></a>
+          <a href="#"><i class="fa-brands fa-telegram" style="color:rgb(98,181,238);"></i></a>
+          <a href="#"><i class="fa-brands fa-github" style="color:#9bacc7;"></i></a>
+        </div>
+        <div class="but">
+          <a href="#about" class="about">About me</a>
+          <a href="#about" class="resume">Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

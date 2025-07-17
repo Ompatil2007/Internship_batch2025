@@ -3,7 +3,7 @@ import java.io.*;
 public class Assignment3 {
     public static void main(String[] args) {
         try {
-            // Trying to read from a file that doesn't exist
+           
             FileReader file = new FileReader("nonexistentfile.txt");
 
             int data;
