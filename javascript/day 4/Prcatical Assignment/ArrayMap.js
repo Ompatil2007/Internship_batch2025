@@ -52,3 +52,4 @@ const display = arr2.some((dis)=>{
     return dis.age<=10;
 })
 console.log("Childs = "+display );
+    
